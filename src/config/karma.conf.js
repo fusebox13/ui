@@ -14,7 +14,7 @@ module.exports = function (config) {
       webpack: webpackConfig,
       port: 9876,  // karma web server port
       colors: true,
-      logLevel: config.LOG_INFO,
+      logLevel: config.LOG_WARN,
       browsers: ['ChromeHeadless', 'Firefox', 'FirefoxDeveloper', 'FirefoxNightly', 'IE'],
       autoWatch: true,
       concurrency: Infinity,

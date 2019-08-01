@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "karma start --single-run --browsers ChromeHeadless src/config/karma.conf.js",
+    "tdd" : "karma start --autoWatch --browsers ChromeHeadless src/config/karma.conf.js",
     "build": "webpack"
   },
   "keywords": [

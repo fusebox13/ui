@@ -25,5 +25,5 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin()
   ],
-  devtool: 'inline-source-map',
+  devtool: 'inline-source-map'
 }
