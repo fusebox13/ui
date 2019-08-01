@@ -84,6 +84,9 @@ import { BToast as FcsToast } from 'bootstrap-vue'
 import { BToaster as FcsToaster } from 'bootstrap-vue'
 import { BTooltip as FcsTooltip } from 'bootstrap-vue'
 
+/* Custom Components */
+import FcsSearch from './components/FcsSearch.vue'
+
 
 /* Directives */
 import { VBModal as FcsModalDirective } from 'bootstrap-vue'
@@ -94,6 +97,10 @@ import { VBTooltip as FcsTooltipDirective } from 'bootstrap-vue'
 
 export default {
   install (Vue, options) {
+    /* Custom Components */
+    Vue.component('fcs-search', FcsSearch)
+
+    /* Renamed Components */
     Vue.component('fcs-alert', FcsAlert)
     Vue.component('fcs-badge', FcsBadge)
     Vue.component('fcs-breadcrumb', FcsBreadcrumb)
@@ -189,6 +196,7 @@ export default {
 }
 
 export {
+  FcsSearch,
   FcsAlert,
   FcsBadge,
   FcsBreadcrumb,
